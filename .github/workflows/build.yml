@@ -56,6 +56,13 @@ jobs:
           restore-keys: |
             gradle-${{ runner.os }}-
 
+      - name: Vérifier la présence de gradlew
+        run: |
+          if [ ! -f gradlew ]; then
+            echo "::error::gradlew introuvable à la racine du dépôt. Ajoutez le Gradle Wrapper (gradlew, gradlew.bat, gradle/wrapper/*) au dépôt."
+            exit 1
+          fi
+
       - name: Rendre gradlew exécutable
         run: chmod +x gradlew
 
@@ -100,6 +107,13 @@ jobs:
           key: gradle-${{ runner.os }}-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
           restore-keys: |
             gradle-${{ runner.os }}-
+
+      - name: Vérifier la présence de gradlew
+        run: |
+          if [ ! -f gradlew ]; then
+            echo "::error::gradlew introuvable à la racine du dépôt. Ajoutez le Gradle Wrapper (gradlew, gradlew.bat, gradle/wrapper/*) au dépôt."
+            exit 1
+          fi
 
       - name: Rendre gradlew exécutable
         run: chmod +x gradlew
@@ -161,6 +175,13 @@ jobs:
           key: gradle-${{ runner.os }}-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
           restore-keys: |
             gradle-${{ runner.os }}-
+
+      - name: Vérifier la présence de gradlew
+        run: |
+          if [ ! -f gradlew ]; then
+            echo "::error::gradlew introuvable à la racine du dépôt. Ajoutez le Gradle Wrapper (gradlew, gradlew.bat, gradle/wrapper/*) au dépôt."
+            exit 1
+          fi
 
       - name: Rendre gradlew exécutable
         run: chmod +x gradlew
