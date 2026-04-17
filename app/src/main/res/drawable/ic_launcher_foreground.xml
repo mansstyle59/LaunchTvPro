@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Fond -->
+    <path
+        android:fillColor="#0A0A1A"
+        android:pathData="M0,0 H108 V108 H0 Z"/>
+
+    <!-- Écran TV -->
+    <path
+        android:fillColor="#12122A"
+        android:strokeColor="#00D4FF"
+        android:strokeWidth="2"
+        android:pathData="M18,24 Q18,20 22,20 H86 Q90,20 90,24 V72 Q90,76 86,76 H22 Q18,76 18,72 Z"/>
+
+    <!-- Pied TV -->
+    <path
+        android:fillColor="#00D4FF"
+        android:pathData="M40,76 H68 L72,86 H36 Z"/>
+    <path
+        android:fillColor="#00D4FF"
+        android:pathData="M36,84 H72 V88 H36 Z"/>
+
+    <!-- Globe web (cercle) -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#00D4FF"
+        android:strokeWidth="2.5"
+        android:pathData="M54,34 m-16,0 a16,16 0 1,0 32,0 a16,16 0 1,0 -32,0"/>
+
+    <!-- Méridien vertical -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#00D4FF"
+        android:strokeWidth="1.5"
+        android:pathData="M54,18 Q60,34 54,50 Q48,34 54,18"/>
+
+    <!-- Parallèle horizontal -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#00D4FF"
+        android:strokeWidth="1.5"
+        android:pathData="M38,34 H70"/>
+
+    <!-- Curseur D-pad -->
+    <path
+        android:fillColor="#00D4FF"
+        android:pathData="M54,28 L57,33 L51,33 Z"/>
+    <path
+        android:fillColor="#00D4FF"
+        android:pathData="M54,40 L51,35 L57,35 Z"/>
+    <path
+        android:fillColor="#00D4FF"
+        android:pathData="M48,34 L53,31 L53,37 Z"/>
+    <path
+        android:fillColor="#00D4FF"
+        android:pathData="M60,34 L55,31 L55,37 Z"/>
+
+    <!-- Centre D-pad -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,34 m-2,0 a2,2 0 1,0 4,0 a2,2 0 1,0 -4,0"/>
+
+</vector>

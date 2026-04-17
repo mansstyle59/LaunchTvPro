@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Thème principal TV - plein écran, sans barre de titre -->
+    <style name="Theme.TVWebBrowser" parent="@style/Theme.Leanback">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/tv_bg</item>
+        <item name="android:colorPrimary">@color/tv_accent</item>
+        <item name="android:colorPrimaryDark">@color/tv_bg</item>
+        <item name="android:colorAccent">@color/tv_accent</item>
+        <item name="android:statusBarColor">@color/tv_bg</item>
+        <item name="android:navigationBarColor">@color/tv_bg</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <!-- Focus selector TV -->
+        <item name="android:colorFocusedHighlight">@color/tv_focus</item>
+    </style>
+
+</resources>

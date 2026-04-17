@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LaunchTVPro</string>
+    <string name="url_hint">Entrez une URL ou recherchez…</string>
+    <string name="btn_back">Retour</string>
+    <string name="btn_forward">Avancer</string>
+    <string name="btn_refresh">Rafraîchir</string>
+    <string name="btn_home">Accueil</string>
+    <string name="btn_menu">Menu</string>
+    <string name="msg_input_mode">✏️ Mode saisie — OK pour terminer</string>
+    <string name="msg_loading">Chargement…</string>
+</resources>

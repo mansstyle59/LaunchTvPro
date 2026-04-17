@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <!-- WebView principale -->
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:overScrollMode="never" />
+
+    <!-- Barre de progression -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_gravity="top"
+        android:max="100"
+        android:progressTint="#00D4FF"
+        android:progressBackgroundTint="#1a1a2e"
+        android:visibility="gone"
+        android:indeterminate="false" />
+
+    <!-- Toolbar supérieure -->
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:background="#CC0A0A1A"
+        android:orientation="horizontal"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="8dp"
+        android:gravity="center_vertical"
+        android:elevation="8dp">
+
+        <!-- Bouton Retour -->
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_back"
+            android:background="@drawable/btn_tv_bg"
+            android:contentDescription="Retour"
+            android:enabled="false"
+            android:alpha="0.5"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+
+        <!-- Bouton Avancer -->
+        <ImageButton
+            android:id="@+id/btnForward"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_forward"
+            android:background="@drawable/btn_tv_bg"
+            android:contentDescription="Avancer"
+            android:enabled="false"
+            android:alpha="0.5"
+            android:focusable="true"
+            android:layout_marginStart="4dp" />
+
+        <!-- Bouton Rafraîchir -->
+        <ImageButton
+            android:id="@+id/btnRefresh"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_refresh"
+            android:background="@drawable/btn_tv_bg"
+            android:contentDescription="Rafraîchir"
+            android:focusable="true"
+            android:layout_marginStart="4dp" />
+
+        <!-- Barre URL -->
+        <EditText
+            android:id="@+id/urlBar"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_weight="1"
+            android:background="@drawable/url_bar_bg"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#88AABBCC"
+            android:hint="Entrez une URL ou recherchez..."
+            android:textSize="14sp"
+            android:paddingHorizontal="14dp"
+            android:singleLine="true"
+            android:imeOptions="actionGo"
+            android:inputType="textUri"
+            android:selectAllOnFocus="true"
+            android:layout_marginHorizontal="8dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+
+        <!-- Bouton Accueil -->
+        <ImageButton
+            android:id="@+id/btnHome"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_home"
+            android:background="@drawable/btn_tv_bg"
+            android:contentDescription="Accueil"
+            android:focusable="true"
+            android:layout_marginStart="4dp" />
+
+        <!-- Bouton Menu -->
+        <ImageButton
+            android:id="@+id/btnMenu"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_menu"
+            android:background="@drawable/btn_tv_bg"
+            android:contentDescription="Menu"
+            android:focusable="true"
+            android:layout_marginStart="4dp" />
+
+    </LinearLayout>
+
+    <!-- Overlay message (mode saisie, notifications) -->
+    <TextView
+        android:id="@+id/overlayMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/overlay_bg"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textAlignment="center"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="12dp"
+        android:elevation="10dp"
+        android:visibility="gone"
+        android:text="" />
+
+</FrameLayout>

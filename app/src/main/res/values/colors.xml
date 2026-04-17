@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="tv_bg">#0A0A1A</color>
+    <color name="tv_surface">#12122A</color>
+    <color name="tv_accent">#00D4FF</color>
+    <color name="tv_accent_dim">#4400D4FF</color>
+    <color name="tv_text">#FFFFFF</color>
+    <color name="tv_text_secondary">#88AABBCC</color>
+    <color name="tv_toolbar_bg">#CC0A0A1A</color>
+    <color name="tv_focus">#00D4FF</color>
+    <color name="tv_border">#2A2A4A</color>
+    <color name="progress_color">#00D4FF</color>
+</resources>
